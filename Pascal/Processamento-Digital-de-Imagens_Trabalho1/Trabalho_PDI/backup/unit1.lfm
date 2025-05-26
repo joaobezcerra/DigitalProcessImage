@@ -1,0 +1,240 @@
+object Form1: TForm1
+  Left = 367
+  Height = 571
+  Top = 222
+  Width = 1086
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object Image1: TImage
+    Left = 24
+    Height = 390
+    Top = 24
+    Width = 392
+    OnClick = Image1Click
+  end
+  object Image2: TImage
+    Left = 664
+    Height = 390
+    Top = 24
+    Width = 392
+  end
+  object Button1: TButton
+    Left = 454
+    Height = 136
+    Top = 134
+    Width = 180
+    Caption = '<=='
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = -160
+    Height = 20
+    Top = 814
+    Width = 79
+    Caption = 'Magnitude: '
+  end
+  object Label2: TLabel
+    Left = -160
+    Height = 20
+    Top = 864
+    Width = 55
+    Caption = 'Direção:'
+  end
+  object Edit1: TEdit
+    Left = 120
+    Height = 28
+    Top = 464
+    Width = 108
+    TabOrder = 1
+    Text = 'Edit1'
+    OnChange = Edit1Change
+  end
+  object Edit2: TEdit
+    Left = 120
+    Height = 28
+    Top = 497
+    Width = 108
+    TabOrder = 2
+    Text = 'Edit2'
+    OnChange = Edit2Change
+  end
+  object StaticText1: TStaticText
+    Left = 35
+    Height = 21
+    Top = 471
+    Width = 81
+    Caption = 'Magnitude: '
+    TabOrder = 3
+    OnClick = StaticText1Click
+  end
+  object StaticText2: TStaticText
+    Left = 35
+    Height = 21
+    Top = 504
+    Width = 81
+    Caption = 'Direção: '
+    TabOrder = 4
+    OnClick = StaticText1Click
+  end
+  object MainMenu1: TMainMenu
+    Left = 1464
+    Top = 176
+    object MenuItem1: TMenuItem
+      Caption = 'Arquivo'
+      object MenuItem2: TMenuItem
+        Caption = 'Abrir Imagem'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Salvar Imagem'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Sair'
+        OnClick = MenuItem4Click
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Operações'
+      object MenuItem7: TMenuItem
+        Caption = 'Binarização'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Converter para Cinza'
+        OnClick = MenuItem9Click
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Compressão de Escala Dinâmica'
+        OnClick = MenuItem10Click
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Equalizar'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Suavizar'
+        object MenuItem13: TMenuItem
+          Caption = 'Media Np(4)'
+          OnClick = MenuItem13Click
+        end
+        object MenuItem14: TMenuItem
+          Caption = 'Media Np(8)'
+          OnClick = MenuItem14Click
+        end
+        object MenuItem15: TMenuItem
+          Caption = 'Mediana (3x3)'
+          OnClick = MenuItem15Click
+        end
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'Gerar Ruído'
+        object MenuItem17: TMenuItem
+          Caption = 'Sal e Pimenta'
+          OnClick = MenuItem17Click
+        end
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'Inverter Imagem'
+        object MenuItem19: TMenuItem
+          Caption = 'Horizontal'
+          OnClick = MenuItem19Click
+        end
+        object MenuItem20: TMenuItem
+          Caption = 'Vertical'
+          OnClick = MenuItem20Click
+        end
+      end
+      object MenuItem21: TMenuItem
+        Caption = 'Interpolar'
+        object MenuItem22: TMenuItem
+          Caption = 'Vizinho Mais Próximo'
+          OnClick = MenuItem22Click
+        end
+      end
+      object MenuItem24: TMenuItem
+        Caption = 'Laplaciano'
+        OnClick = MenuItem24Click
+      end
+      object MenuItem25: TMenuItem
+        Caption = 'Limiarizar'
+        OnClick = MenuItem25Click
+      end
+      object MenuItem26: TMenuItem
+        Caption = 'Negativar'
+        object MenuItem27: TMenuItem
+          Caption = 'Cinza'
+          OnClick = MenuItem27Click
+        end
+        object MenuItem28: TMenuItem
+          Caption = 'Colorida'
+          OnClick = MenuItem28Click
+        end
+      end
+      object MenuItem29: TMenuItem
+        Caption = 'Magnitude'
+        OnClick = MenuItem29Click
+      end
+      object MenuItem30: TMenuItem
+        Caption = 'Separar Canal'
+        object MenuItem31: TMenuItem
+          Caption = 'Azul'
+          OnClick = MenuItem31Click
+        end
+        object MenuItem32: TMenuItem
+          Caption = 'Verde'
+          OnClick = MenuItem32Click
+        end
+        object MenuItem33: TMenuItem
+          Caption = 'Vermelho'
+          OnClick = MenuItem33Click
+        end
+        object MenuItem34: TMenuItem
+          Caption = 'Cinza/Azul'
+          OnClick = MenuItem34Click
+        end
+        object MenuItem35: TMenuItem
+          Caption = 'Cinza/Verde'
+          OnClick = MenuItem35Click
+        end
+        object MenuItem36: TMenuItem
+          Caption = 'Cinza/Vermelho'
+          OnClick = MenuItem36Click
+        end
+      end
+      object MenuItem37: TMenuItem
+        Caption = 'Sobel'
+        object MenuItem38: TMenuItem
+          Caption = 'Completo'
+          OnClick = MenuItem38Click
+        end
+        object MenuItem39: TMenuItem
+          Caption = 'Horizontal'
+          OnClick = MenuItem39Click
+        end
+        object MenuItem40: TMenuItem
+          Caption = 'Vertical'
+          OnClick = MenuItem40Click
+        end
+      end
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Conversão de Modelo de cores'
+      OnClick = MenuItem6Click
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 1464
+    Top = 256
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 1464
+    Top = 320
+  end
+end

@@ -1,0 +1,156 @@
+object Form2: TForm2
+  Left = 469
+  Height = 347
+  Top = 259
+  Width = 544
+  Caption = 'Form2'
+  ClientHeight = 347
+  ClientWidth = 544
+  Color = clCream
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object RadioButton1: TRadioButton
+    Left = 40
+    Height = 24
+    Top = 89
+    Width = 93
+    Caption = 'RGB->HSV'
+    Checked = True
+    Color = clMaroon
+    ParentColor = False
+    TabOrder = 9
+    TabStop = True
+    OnChange = RadioButton1Change
+  end
+  object RadioButton2: TRadioButton
+    Left = 40
+    Height = 24
+    Top = 120
+    Width = 93
+    Caption = 'HSV->RGB'
+    TabOrder = 0
+    OnChange = RadioButton2Change
+  end
+  object Button1: TButton
+    Left = 32
+    Height = 31
+    Top = 264
+    Width = 94
+    Caption = 'Resetar'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 224
+    Height = 28
+    Top = 80
+    Width = 100
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 224
+    Height = 28
+    Top = 120
+    Width = 100
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 224
+    Height = 28
+    Top = 160
+    Width = 100
+    TabOrder = 4
+  end
+  object Edit4: TEdit
+    Left = 392
+    Height = 28
+    Top = 80
+    Width = 100
+    TabOrder = 5
+  end
+  object Edit5: TEdit
+    Left = 396
+    Height = 28
+    Top = 120
+    Width = 100
+    TabOrder = 6
+  end
+  object Edit6: TEdit
+    Left = 392
+    Height = 28
+    Top = 160
+    Width = 100
+    TabOrder = 7
+  end
+  object Label3: TLabel
+    Left = 200
+    Height = 20
+    Top = 88
+    Width = 12
+    Caption = 'R:'
+    OnClick = Label3Click
+  end
+  object Label4: TLabel
+    Left = 200
+    Height = 20
+    Top = 128
+    Width = 13
+    Caption = 'G:'
+  end
+  object Label5: TLabel
+    Left = 200
+    Height = 20
+    Top = 168
+    Width = 12
+    Caption = 'B:'
+  end
+  object Label6: TLabel
+    Left = 369
+    Height = 20
+    Top = 88
+    Width = 14
+    Caption = 'H:'
+  end
+  object Label7: TLabel
+    Left = 369
+    Height = 20
+    Top = 128
+    Width = 11
+    Caption = 'S:'
+  end
+  object Label8: TLabel
+    Left = 369
+    Height = 20
+    Top = 168
+    Width = 12
+    Caption = 'V:'
+  end
+  object Button2: TButton
+    Left = 408
+    Height = 31
+    Top = 264
+    Width = 94
+    Caption = 'Converter'
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+  object StaticText1: TStaticText
+    Left = 224
+    Height = 21
+    Top = 56
+    Width = 81
+    Caption = 'Entrada'
+    TabOrder = 10
+    OnClick = StaticText1Click
+  end
+  object StaticText2: TStaticText
+    Left = 392
+    Height = 21
+    Top = 56
+    Width = 81
+    Caption = 'Saída'
+    TabOrder = 11
+    OnClick = StaticText1Click
+  end
+end
